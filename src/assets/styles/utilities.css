@@ -1,0 +1,19 @@
+/* ---------------------------------- */
+/* Utilities */
+/* ---------------------------------- */
+@layer components {
+  .container {
+    max-width: 1200px;
+    width: 100%;
+    padding-inline: 15px;
+    margin-inline: auto;
+  }
+  .section-title {
+    color: black;
+    font-size: var(--heading-sm);
+    line-height: 145%;
+    font-weight: 600;
+    @apply mb-4;
+    @apply lg:text-(length:--heading-lg);
+  }
+}

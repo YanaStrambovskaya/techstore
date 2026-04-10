@@ -1,0 +1,27 @@
+@layer components {
+  /* ---------------------------------- */
+  /* Breadcrumb */
+  /* ---------------------------------- */
+  .breadcrumb__list {
+    display: flex;
+    align-items: center;
+    font-size: var(--small-text);
+    flex-wrap: wrap;
+    @apply gap-1;
+  }
+  .breadcrumb__list li {
+    display: flex;
+    align-items: center;
+    @apply gap-2;
+  }
+  .breadcrumb__list li:not(:last-child)::after {
+    @apply content-['/'] text-gray-300;
+  }
+  .breadcrumb__list li a {
+    @apply text-gray-500 hover:text-black;
+  }
+  .breadcrumb__item--current {
+    color: black;
+    font-weight: 500;
+  }
+}

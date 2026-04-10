@@ -1,0 +1,5 @@
+@layer base {
+  body {
+    @apply text-(length:--text-md) font-normal leading-[145%] font-sans;
+  }
+}

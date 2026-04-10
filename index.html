@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Basic favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- PNG icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
+    <!-- Apple devices -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- Web manifest -->
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechStore</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a href="/" class="ml-1 w-[96px] lg:w-[116px] aspect-[6/1]">
+            <svg class="w-full h-full">
+              <use xlink:href="/icons.svg#logo" href="/icons.svg#logo"></use>
+            </svg>
+          </a>
+          <button
+            type="button"
+            class="btn--icon main-menu__toggle lg:hidden"
+            data-toggle="menu"
+            aria-label="Toggle mobile menu"
+            aria-expanded="false"
+            aria-controls="main-menu"
+          >
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav id="main-menu" class="main-menu">
+            <ul class="main-menu__list">
+              <li class="main-menu__item">
+                <a aria-current="page" class="main-menu__link" href="/">Home</a>
+              </li>
+              <li class="main-menu__item main-menu__item--has-submenu">
+                <button
+                  class="main-menu__trigger"
+                  data-toggle="submenu"
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="submenu-shop"
+                  aria-label="Toggle Shop Submenu"
+                >
+                  <span>Shop</span>
+                  <svg class="icon">
+                    <use
+                      xlink:href="/icons.svg#arrow-down-01"
+                      href="/icons.svg#arrow-down-01"
+                    ></use>
+                  </svg>
+                </button>
+                <ul class="main-menu__submenu" id="submenu-shop">
+                  <li>
+                    <a class="main-menu__link main-menu__submenu-link" href="#"
+                      >About</a
+                    >
+                  </li>
+                  <li>
+                    <a class="main-menu__link main-menu__submenu-link" href="#"
+                      >FAQ</a
+                    >
+                  </li>
+                  <li>
+                    <a class="main-menu__link main-menu__submenu-link" href="#"
+                      >Reviews</a
+                    >
+                  </li>
+                  <li>
+                    <a class="main-menu__link main-menu__submenu-link" href="#"
+                      >Photos</a
+                    >
+                  </li>
+                  <li>
+                    <a class="main-menu__link main-menu__submenu-link" href="#"
+                      >Gift Boxes</a
+                    >
+                  </li>
+                  <li>
+                    <a class="main-menu__link main-menu__submenu-link" href="#"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="main-menu__item main-menu__item--has-submenu">
+                <button
+                  class="main-menu__trigger"
+                  data-toggle="submenu"
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="submenu-collections"
+                  aria-label="Toggle Collections Submenu"
+                >
+                  <span>Collections</span>
+                  <svg class="icon">
+                    <use
+                      xlink:href="/icons.svg#arrow-down-01"
+                      href="/icons.svg#arrow-down-01"
+                    ></use>
+                  </svg>
+                </button>
+                <ul class="main-menu__submenu" id="submenu-collections">
+                  <li>
+                    <a class="main-menu__link main-menu__submenu-link" href="#"
+                      >About</a
+                    >
+                  </li>
+                  <li>
+                    <a class="main-menu__link main-menu__submenu-link" href="#"
+                      >FAQ</a
+                    >
+                  </li>
+                  <li>
+                    <a class="main-menu__link main-menu__submenu-link" href="#"
+                      >Reviews</a
+                    >
+                  </li>
+                  <li>
+                    <a class="main-menu__link main-menu__submenu-link" href="#"
+                      >Photos</a
+                    >
+                  </li>
+                  <li>
+                    <a class="main-menu__link main-menu__submenu-link" href="#"
+                      >Gift Boxes</a
+                    >
+                  </li>
+                  <li>
+                    <a class="main-menu__link main-menu__submenu-link" href="#"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="main-menu__item main-menu__item--has-submenu">
+                <button
+                  class="main-menu__trigger"
+                  data-toggle="submenu"
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="submenu-company"
+                  aria-label="Toggle Company Submenu"
+                >
+                  <span>Company</span>
+                  <svg class="icon">
+                    <use
+                      xlink:href="/icons.svg#arrow-down-01"
+                      href="/icons.svg#arrow-down-01"
+                    ></use>
+                  </svg>
+                </button>
+                <ul class="main-menu__submenu" id="submenu-company">
+                  <li>
+                    <a class="main-menu__link main-menu__submenu-link" href="#"
+                      >About</a
+                    >
+                  </li>
+                  <li>
+                    <a class="main-menu__link main-menu__submenu-link" href="#"
+                      >FAQ</a
+                    >
+                  </li>
+                  <li>
+                    <a class="main-menu__link main-menu__submenu-link" href="#"
+                      >Reviews</a
+                    >
+                  </li>
+                  <li>
+                    <a class="main-menu__link main-menu__submenu-link" href="#"
+                      >Photos</a
+                    >
+                  </li>
+                  <li>
+                    <a class="main-menu__link main-menu__submenu-link" href="#"
+                      >Gift Boxes</a
+                    >
+                  </li>
+                  <li>
+                    <a class="main-menu__link main-menu__submenu-link" href="#"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="main-menu__item main-menu__item--has-submenu">
+                <button
+                  class="main-menu__trigger"
+                  data-toggle="submenu"
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="submenu-support"
+                  aria-label="Toggle Support Submenu"
+                >
+                  <span>Support</span>
+                  <svg class="icon">
+                    <use
+                      xlink:href="/icons.svg#arrow-down-01"
+                      href="/icons.svg#arrow-down-01"
+                    ></use>
+                  </svg>
+                </button>
+                <ul class="main-menu__submenu" id="submenu-support">
+                  <li>
+                    <a class="main-menu__link main-menu__submenu-link" href="#"
+                      >About</a
+                    >
+                  </li>
+                  <li>
+                    <a class="main-menu__link main-menu__submenu-link" href="#"
+                      >FAQ</a
+                    >
+                  </li>
+                  <li>
+                    <a class="main-menu__link main-menu__submenu-link" href="#"
+                      >Reviews</a
+                    >
+                  </li>
+                  <li>
+                    <a class="main-menu__link main-menu__submenu-link" href="#"
+                      >Photos</a
+                    >
+                  </li>
+                  <li>
+                    <a class="main-menu__link main-menu__submenu-link" href="#"
+                      >Gift Boxes</a
+                    >
+                  </li>
+                  <li>
+                    <a class="main-menu__link main-menu__submenu-link" href="#"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="flex flex-col gap-13 mt-6">
+      <!-- Hero Section -->
+      <section>
+        <div class="container">
+          <div class="swiper hero__slider w-full overflow-hidden">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide hero__slide">
+                <div class="hero__media">
+                  <img
+                    src="/src/assets/images/hero-1.jpg"
+                    alt="New Arrivals"
+                    class="hero__img"
+                  />
+                </div>
+
+                <div class="hero__content">
+                  <h2 class="hero__title">New Arrivals</h2>
+                  <button
+                    type="button"
+                    class="btn hero__cta"
+                    aria-label="View New Arrivals"
+                  >
+                    View Product
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide hero__slide">
+                <div class="hero__media">
+                  <img
+                    src="/src/assets/images/hero-2.jpg"
+                    alt="Spring Sale Up to 50% Off"
+                    class="hero__img"
+                  />
+                </div>
+
+                <div class="hero__content">
+                  <h2 class="hero__title">Spring Sale Up to 50% Off</h2>
+                  <button
+                    type="button"
+                    class="btn hero__cta"
+                    aria-label="View Spring Sale Up to 50% Off"
+                  >
+                    View Product
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide hero__slide">
+                <div class="hero__media">
+                  <img
+                    src="/src/assets/images/hero-1.jpg"
+                    alt="New Arrivals"
+                    class="hero__img"
+                  />
+                </div>
+
+                <div class="hero__content">
+                  <h2 class="hero__title">New Arrivals</h2>
+                  <button
+                    type="button"
+                    class="btn hero__cta"
+                    aria-label="View New Arrivals"
+                  >
+                    View Product
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Optional controls -->
+            <div class="swiper-pagination hidden md:block"></div>
+            <div
+              class="swiper-button-prev hidden! md:!block text-white! left-[15px]! opacity-50 hover:opacity-100"
+            ></div>
+            <div
+              class="swiper-button-next hidden! md:!block text-white! right-[15px]! opacity-50 hover:opacity-100"
+            ></div>
+          </div>
+        </div>
+      </section>
+      <!-- Breadcrumb Section -->
+      <section>
+        <div class="container">
+          <nav class="breadcrumb__menu" aria-label="Breadcrumb">
+            <ul class="breadcrumb__list">
+              <li class="breadcrumb__item">
+                <a class="breadcrumb__link" href="#">Home</a>
+              </li>
+              <li class="breadcrumb__item">
+                <a class="breadcrumb__link" href="#">Electronics</a>
+              </li>
+              <li class="breadcrumb__item">
+                <a class="breadcrumb__link" href="#">Smartphones</a>
+              </li>
+              <li class="breadcrumb__item">
+                <a class="breadcrumb__link" href="#">Android</a>
+              </li>
+              <li class="breadcrumb__item">
+                <a class="breadcrumb__link" href="#">Premium</a>
+              </li>
+              <li
+                class="breadcrumb__item breadcrumb__item--current"
+                aria-current="page"
+              >
+                Galaxy S24 Ultra
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <!-- Reviews Section -->
+      <section>
+        <div class="container">
+          <div
+            class="flex flex-col gap-5 bg-(--brand-200) rounded-(--card-radius) p-6 lg:p-12 lg:items-center lg:gap-10"
+          >
+            <div class="flex gap-1.5">
+              <svg class="icon">
+                <use xlink:href="/icons.svg#logo" href="/icons.svg#star"></use>
+              </svg>
+              <svg class="icon">
+                <use xlink:href="/icons.svg#logo" href="/icons.svg#star"></use>
+              </svg>
+              <svg class="icon">
+                <use xlink:href="/icons.svg#logo" href="/icons.svg#star"></use>
+              </svg>
+              <svg class="icon">
+                <use xlink:href="/icons.svg#logo" href="/icons.svg#star"></use>
+              </svg>
+              <svg class="icon">
+                <use xlink:href="/icons.svg#logo" href="/icons.svg#star"></use>
+              </svg>
+            </div>
+            <h2
+              class="font-bold text-(--brand-800) text-(length:--heading-sm) lg:text-(length:--heading-lg)"
+            >
+              Loved by tons of people! Real users, real results.
+            </h2>
+            <p
+              class="text-(length:--small-text) lg:text-[18px] text-(--brand-800) opacity-60"
+            >
+              Rated 4.8 out of 5 by over 7,809 customers — from dread beginners
+              to seasoned pros.
+            </p>
+            <button type="button" class="btn">View Product</button>
+          </div>
+        </div>
+      </section>
+      <!-- Products -->
+      <section>
+        <div class="container">
+          <h2 class="section-title">You May Also Like</h2>
+          <div
+            class="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-4"
+          >
+            <div class="product-card product-card--sm">
+              <div class="product-card__media">
+                <button
+                  type="button"
+                  class="product-card__favorite btn--icon group"
+                  aria-label="Add to favorites"
+                >
+                  <div class="relative">
+                    <svg
+                      class="icon absolute opacity-0 group-hover:opacity-100"
+                    >
+                      <use
+                        xlink:href="/icons.svg#favorite-add"
+                        href="/icons.svg#favorite-add"
+                      ></use>
+                    </svg>
+                    <svg class="icon group-hover:opacity-0 opacity-100">
+                      <use
+                        xlink:href="/icons.svg#favorite"
+                        href="/icons.svg#favorite"
+                      ></use>
+                    </svg>
+                  </div>
+                </button>
+                <img
+                  class="w-full"
+                  src="/src/assets/images/product-1.jpg"
+                  alt="Product Image"
+                />
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">iPhone 15 Pro</h3>
+                <div class="product-card__specs">
+                  <span class="product-card__spec">256GB</span>
+                  <span class="product-card__dot"></span>
+                  <span class="product-card__spec">8GB RAM</span>
+                  <span class="product-card__dot"></span>
+                  <span class="product-card__spec">Black</span>
+                </div>
+                <div class="product-card__pricing">
+                  <div class="product-card__price">$999</div>
+                  <div class="product-card__price--old">$1,199</div>
+                </div>
+              </div>
+
+              <button type="button" class="product-card__cta btn">
+                View Product
+              </button>
+            </div>
+            <div class="product-card product-card--sm">
+              <div class="product-card__media">
+                <button
+                  type="button"
+                  class="product-card__favorite btn--icon group"
+                  aria-label="Add to favorites"
+                >
+                  <div class="relative">
+                    <svg
+                      class="icon absolute opacity-0 group-hover:opacity-100"
+                    >
+                      <use
+                        xlink:href="/icons.svg#favorite-add"
+                        href="/icons.svg#favorite-add"
+                      ></use>
+                    </svg>
+                    <svg class="icon group-hover:opacity-0 opacity-100">
+                      <use
+                        xlink:href="/icons.svg#favorite"
+                        href="/icons.svg#favorite"
+                      ></use>
+                    </svg>
+                  </div>
+                </button>
+                <img
+                  class="w-full"
+                  src="/src/assets/images/product-2.jpg"
+                  alt="Product Image"
+                />
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Google Pixel 8</h3>
+                <div class="product-card__specs">
+                  <span class="product-card__spec">128GB</span>
+                  <span class="product-card__dot"></span>
+                  <span class="product-card__spec">8GB RAM</span>
+                  <span class="product-card__dot"></span>
+                  <span class="product-card__spec">Hazel</span>
+                </div>
+                <div class="product-card__pricing">
+                  <div class="product-card__price">$599</div>
+                  <div class="product-card__price--old">$699</div>
+                </div>
+              </div>
+
+              <button type="button" class="product-card__cta btn">
+                View Product
+              </button>
+            </div>
+            <div class="product-card product-card--sm hidden lg:flex">
+              <div class="product-card__media">
+                <button
+                  type="button"
+                  class="product-card__favorite btn--icon group"
+                  aria-label="Add to favorites"
+                >
+                  <div class="relative">
+                    <svg
+                      class="icon absolute opacity-0 group-hover:opacity-100"
+                    >
+                      <use
+                        xlink:href="/icons.svg#favorite-add"
+                        href="/icons.svg#favorite-add"
+                      ></use>
+                    </svg>
+                    <svg class="icon group-hover:opacity-0 opacity-100">
+                      <use
+                        xlink:href="/icons.svg#favorite"
+                        href="/icons.svg#favorite"
+                      ></use>
+                    </svg>
+                  </div>
+                </button>
+                <img
+                  class="w-full"
+                  src="/src/assets/images/product-1.jpg"
+                  alt="Product Image"
+                />
+              </div>
+              <div class="product-card__body">
+                <h3 class="product-card__title">Google Pixel 8</h3>
+                <div class="product-card__specs">
+                  <span class="product-card__spec">256GB</span>
+                  <span class="product-card__dot"></span>
+                  <span class="product-card__spec">8GB RAM</span>
+                  <span class="product-card__dot"></span>
+                  <span class="product-card__spec">Black</span>
+                </div>
+                <div class="product-card__pricing">
+                  <div class="product-card__price">$999</div>
+                  <div class="product-card__price--old">$1,199</div>
+                </div>
+              </div>
+
+              <button type="button" class="product-card__cta btn">
+                View Product
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Featured Product -->
+      <section>
+        <div class="container">
+          <div class="product-card product-card--lg">
+            <div class="product-card__media lg:flex-3">
+              <button
+                type="button"
+                class="product-card__favorite btn--icon group"
+                aria-label="Add to favorites"
+              >
+                <div class="relative">
+                  <svg class="icon absolute opacity-0 group-hover:opacity-100">
+                    <use
+                      xlink:href="/icons.svg#favorite-add"
+                      href="/icons.svg#favorite-add"
+                    ></use>
+                  </svg>
+                  <svg class="icon group-hover:opacity-0 opacity-100">
+                    <use
+                      xlink:href="/icons.svg#favorite"
+                      href="/icons.svg#favorite"
+                    ></use>
+                  </svg>
+                </div>
+              </button>
+              <img
+                class="w-full"
+                src="/src/assets/images/product-2.jpg"
+                alt="Product Image"
+              />
+            </div>
+            <div
+              class="flex flex-col gap-4 lg:gap-6 lg:justify-center lg:flex-2"
+            >
+              <div class="product-card__body">
+                <span class="product-card__badge"> New Release </span>
+                <h3
+                  class="text-(length:--heading-sm) font-bold lg:text-(length:--heading-lg) leading-[100%] lg:text-center"
+                >
+                  Google Pixel 8 Some some
+                </h3>
+                <div class="product-card__specs">
+                  <span class="product-card__spec">256GB</span>
+                  <span class="product-card__dot"></span>
+                  <span class="product-card__spec">8GB RAM</span>
+                  <span class="product-card__dot"></span>
+                  <span class="product-card__spec">Black</span>
+                </div>
+                <div class="product-card__pricing">
+                  <div
+                    class="text-(length:--heading-sm) font-bold lg:text-(length:--heading-sm) product-card__price"
+                  >
+                    $999
+                  </div>
+                  <div
+                    class="product-card__price--old text-(length:--text-md) lg:text-[20px]"
+                  >
+                    $1,199
+                  </div>
+                </div>
+              </div>
+              <div>
+                <button type="button" class="w-full btn">View Product</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container lg:max-w-[800px]!">
+          <h2 class="section-title">Get in Touch</h2>
+
+          <form action="" class="flex flex-col gap-4">
+            <div class="form__group">
+              <label for="name" class="form__label">
+                <span class="form__label-text">Name</span>
+                <span class="form__required">*</span>
+              </label>
+              <input
+                class="form__field"
+                required
+                placeholder="Name"
+                type="text"
+                id="name"
+                name="name"
+              />
+            </div>
+
+            <div class="form__group">
+              <label for="email" class="form__label">
+                <span class="form__label-text">Email</span>
+                <span class="form__required">*</span>
+              </label>
+              <input
+                class="form__field"
+                required
+                placeholder="Email"
+                type="email"
+                id="email"
+                name="email"
+              />
+            </div>
+
+            <div class="form__group">
+              <label for="message" class="form__label">
+                <span class="form__label-text">Message</span>
+                <span class="form__required">*</span>
+              </label>
+              <textarea
+                class="form__field"
+                required
+                rows="6"
+                placeholder="Message"
+                id="message"
+                name="message"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn w-full" disabled>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- Bottom nav -->
+    <footer class="footer">
+      <div class="container">
+        <nav class="mt-10 mb-4 lg:mb-0 footer__menu">
+          <ul
+            class="flex gap-4 bg-(--menu-bg-gray) w-fit lg:w-full p-2 rounded-full lg:rounded-t-3xl lg:rounded-b-none mx-auto lg:justify-center lg:py-8 lg:gap-15"
+          >
+            <li>
+              <a href="/" class="footer__link" aria-label="Home">
+                <span class="btn--icon">
+                  <svg class="icon">
+                    <use
+                      xlink:href="/icons.svg#home"
+                      href="/icons.svg#home"
+                    ></use>
+                  </svg>
+                </span>
+                <span class="footer__text">Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="/" class="footer__link" aria-label="Catalog">
+                <span class="btn--icon">
+                  <svg class="icon">
+                    <use
+                      xlink:href="/icons.svg#catalog"
+                      href="/icons.svg#catalog"
+                    ></use>
+                  </svg>
+                </span>
+                <span class="footer__text">Catalog</span>
+              </a>
+            </li>
+            <li>
+              <a href="/" class="footer__link" aria-label="Favorite">
+                <span class="btn--icon">
+                  <svg class="icon">
+                    <use
+                      xlink:href="/icons.svg#favorite"
+                      href="/icons.svg#favorite"
+                    ></use>
+                  </svg>
+                </span>
+                <span class="footer__text">Favorite</span>
+              </a>
+            </li>
+            <li>
+              <a href="/" class="footer__link" aria-label="Shopping Cart">
+                <span class="btn--icon">
+                  <svg class="icon">
+                    <use
+                      xlink:href="/icons.svg#shopping-basket"
+                      href="/icons.svg#shopping-basket"
+                    ></use>
+                  </svg>
+                </span>
+                <span class="footer__text">Shopping Cart</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

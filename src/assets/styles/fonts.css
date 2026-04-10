@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Figtree";
+  src: url("/src/assets/fonts/Figtree-VariableFont_wght.woff2") format("woff2"),
+    url("/src/assets/fonts/Figtree-VariableFont_wght.woff") format("woff");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* inter-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/src/assets/fonts/Inter-Regular.woff") format("woff"),
+    url("/src/assets/fonts/Inter-Regular.woff2") format("woff2");
+}
+/* inter-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/src/assets/fonts/Inter-Bold.woff") format("woff"),
+    url("/src/assets/fonts/Inter-Bold.woff2") format("woff2");
+}

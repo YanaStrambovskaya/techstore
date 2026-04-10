@@ -1,0 +1,47 @@
+@layer components {
+  /* ------------------------------------- */
+  /* Hero */
+  /* ------------------------------------- */
+  .hero__slide {
+    display: grid !important;
+    overflow: hidden;
+    border-radius: var(--card-radius);
+  }
+  .hero__media {
+    @apply col-start-1 row-start-1 relative lg:aspect-[16/8];
+  }
+  .hero__img {
+    @apply w-full h-full object-cover;
+  }
+  .hero__media::after {
+    /* content: ""; */
+    @apply absolute content-[''] inset-0 bg-black/35;
+  }
+  .hero__content {
+    display: flex;
+    flex-direction: column;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    align-self: flex-end;
+    justify-self: flex-start;
+    color: white;
+    z-index: 2;
+    @apply gap-4 p-4;
+    @apply md:w-full 
+    md:h-full 
+    md:justify-center 
+    md:items-center 
+    lg:gap-10
+    lg:p-6;
+  }
+  .hero__title {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    @apply md:text-[28px] lg:text-[60px];
+  }
+  .hero__cta {
+    width: fit-content;
+    @apply lg:text-lg lg:px-7 lg:py-3;
+  }
+}

@@ -1,0 +1,96 @@
+@layer components {
+  /* ---------------------------------- */
+  /* Product Card */
+  /* ---------------------------------- */
+  .product-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: var(--card-radius);
+    @apply h-full shadow-xl;
+  }
+
+  .product-card--lg.product-card {
+    @apply p-5 gap-5 lg:p-6 lg:flex-row;
+  }
+
+  .product-card--sm.product-card {
+    @apply p-2 gap-2 lg:p-3 lg:gap-4;
+  }
+
+  .product-card__media {
+    @apply rounded-lg overflow-hidden relative;
+  }
+  .product-card__favorite {
+    @apply absolute right-2 top-2 cursor-pointer;
+  }
+  .product-card__body {
+    @apply flex flex-col justify-between;
+  }
+  .product-card--sm .product-card__body {
+    @apply flex-1 gap-2;
+  }
+  .product-card--lg .product-card__body {
+    @apply gap-4 lg:gap-6 lg:items-center;
+  }
+  .product-card__title {
+    font-size: var(--text-xs);
+    font-weight: 700;
+    text-align: center;
+    @apply lg:text-(length:--text-md);
+  }
+  .product-card__badge {
+    width: fit-content;
+    background-color: var(--brand-100);
+    color: var(--brand-600);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    @apply rounded-full px-3 py-2 uppercase;
+  }
+  .product-card__specs {
+    @apply flex gap-1 shrink-0 items-center;
+  }
+  .product-card--sm .product-card__specs {
+    @apply justify-center;
+  }
+  .product-card__spec {
+    @apply text-(--gray-text) shrink-0;
+  }
+  .product-card--sm .product-card__spec {
+    font-size: var(--text-xxs);
+    @apply lg:text-(length:--text-sm);
+  }
+  .product-card--lg .product-card__spec {
+    font-size: var(--text-sm);
+    @apply lg:text-(length:--text-md);
+  }
+  .product-card__pricing {
+    @apply flex gap-1;
+    @apply lg:gap-2;
+  }
+  .product-card--sm .product-card__pricing {
+    justify-content: center;
+  }
+  .product-card--sm .product-card__price {
+    font-size: var(--text-sm);
+    font-weight: 700;
+    @apply lg:text-(length:--text-md);
+  }
+  .product-card__price--old {
+    color: var(--gray-text);
+    @apply line-through;
+  }
+  .product-card--sm .product-card__price--old {
+    font-size: var(--text-xxs);
+    @apply lg:text-(length:--text-sm);
+  }
+  .product-card__dot {
+    width: 2px;
+    height: 2px;
+    background-color: black;
+    @apply rounded-full;
+  }
+  .product-card__cta {
+    @apply w-full mt-auto;
+  }
+}

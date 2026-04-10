@@ -1,0 +1,135 @@
+/* ---------------------------------- */
+/* Header, Main Menu */
+/* ---------------------------------- */
+@layer components {
+  .header__inner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--menu-bg-gray);
+    @apply mt-4  
+        rounded-full 
+        px-4 
+        py-2.5
+        lg:pl-6;
+  }
+
+  button[aria-expanded="false"] .icon {
+    transform: rotate(0deg);
+    transition: all 0.3s ease-in-out;
+  }
+
+  button[aria-expanded="true"] .icon {
+    transform: rotate(-180deg);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .main-menu.open {
+    max-height: calc(100vh - 100px);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .main-menu__submenu.open {
+    max-height: 1000px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .main-menu__item--has-submenu {
+    @apply lg:relative;
+  }
+  .main-menu__link {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+    @apply px-5.75 py-3.75 hover:bg-(--menu-bg-gray-hover);
+    @apply lg:rounded-full;
+  }
+  .main-menu__submenu {
+    max-height: 0;
+    transition: all 0.3s ease-in-out;
+    overflow-y: auto;
+    z-index: 10;
+    @apply lg:absolute 
+        lg:bg-(--menu-bg-gray) 
+        lg:rounded-3xl 
+        lg:w-[180px] 
+        lg:py-0 
+        lg:top-[calc(100%+25px)] 
+        lg:left-1/2 
+        lg:-translate-x-1/2;
+  }
+  .main-menu__submenu.open {
+    @apply lg:py-[20px];
+  }
+  .main-menu__submenu-link {
+    color: var(--gray-text);
+    font-size: var(--text-sm);
+    @apply pl-8.75 pr-5.75 py-2;
+    @apply lg:pl-4 lg:pr-4 lg:py-1.5 lg:rounded-none;
+  }
+  .main-menu {
+    position: absolute;
+    max-height: 0;
+    transition: all 0.3s ease-in-out;
+    overflow-y: auto;
+    top: calc(100% + 10px);
+    width: 100%;
+    left: 0;
+    background-color: var(--menu-bg-gray);
+    z-index: 10;
+    @apply rounded-3xl;
+    @apply lg:max-h-max 
+        lg:relative 
+        lg:top-auto 
+        lg:left-auto 
+        lg:w-auto 
+        lg:overflow-visible;
+  }
+
+  .main-menu__list {
+    @apply py-3;
+    @apply lg:flex lg:items-center lg:gap-1 lg:py-0;
+  }
+
+  .main-menu__toggle {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-menu__toggle span {
+    position: absolute;
+    height: 2px;
+    width: 16px;
+    background-color: black;
+    transition: all 0.3s ease-in-out;
+    @apply rounded-full;
+  }
+
+  .main-menu__toggle span:first-child {
+    @apply -translate-y-[3px];
+  }
+
+  .main-menu__toggle span:last-child {
+    @apply translate-y-[3px];
+  }
+
+  .main-menu__toggle[aria-expanded="true"] span:first-child {
+    @apply translate-y-0 rotate-45;
+  }
+  .main-menu__toggle[aria-expanded="true"] span:last-child {
+    @apply translate-y-0 -rotate-45;
+  }
+  .main-menu__trigger {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+    @apply px-5.75 py-3.75 hover:bg-(--light-gray-hover);
+    @apply lg:rounded-full lg:hover:bg-(--menu-bg-gray-hover);
+  }
+}

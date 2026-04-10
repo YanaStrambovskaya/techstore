@@ -1,0 +1,12 @@
+/* ---------------------------------- */
+/* Swiper */
+/* ---------------------------------- */
+/* @import "./assets/styles/variables.css"; */
+.swiper-pagination-bullet {
+  background-color: var(--brand-300) !important;
+  opacity: 0.3 !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--brand-600) !important;
+  opacity: 1 !important;
+}

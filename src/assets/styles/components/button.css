@@ -1,0 +1,38 @@
+/* ---------------------------------- */
+/* Utilities */
+/* ---------------------------------- */
+@layer components {
+  .btn {
+    border-radius: var(--radius-md);
+    padding-inline: var(--btn-px);
+    padding-block: var(--btn-py);
+    font-size: var(--text-sm);
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    background-color: var(--brand-600);
+    cursor: pointer;
+    @apply hover:bg-(--brand-700) 
+        focus:outline-none 
+        focus:ring-4 
+        focus:ring-[#F4EBFF] 
+        focus:border-[#D6BBFB] 
+        disabled:bg-(--brand-200)
+        disabled:cursor-not-allowed;
+  }
+
+  .btn--icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 50%;
+  }
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+}

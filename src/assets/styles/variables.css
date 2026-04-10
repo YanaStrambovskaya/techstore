@@ -1,0 +1,32 @@
+:root {
+  /* Colors */
+  --menu-bg-gray: #f5f5f5;
+  --menu-bg-gray-hover: #efefef;
+  --gray-text: #717680;
+
+  --brand-100: #f4ebff;
+  --brand-200: #e9d7fe;
+  --brand-300: #c6bef4;
+  --brand-400: #a998ed;
+  --brand-600: #7f56d9;
+  --brand-700: #6a3dc4;
+  --brand-800: #42307d;
+
+  /* Fonts */
+  --font-sans: "Figtree";
+  --text-xxs: 12px;
+  --text-xs: 14px;
+  --text-sm: 16px;
+  --text-md: 18px;
+  --heading-sm: 24px;
+  --heading-lg: 34px;
+  --heading-xl: 44px;
+
+  /* Borders */
+  --radius-md: 8px;
+  --card-radius: 16px;
+
+  /* Padding */
+  --btn-px: 16px;
+  --btn-py: 8px;
+}
