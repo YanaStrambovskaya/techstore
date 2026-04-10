@@ -2,6 +2,9 @@
 
 This project is a test task to check layout, responsive design, and code skills.
 
+## 🔗 Live Demo
+[https://your-project.vercel.app](https://techstore-phi-wheat.vercel.app/)
+
 ## 🚀 Tech Stack
 
 - Vite (build tool)
