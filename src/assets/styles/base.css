@@ -1,5 +1,21 @@
 @layer base {
   body {
-    @apply text-(length:--text-md) font-normal leading-[145%] font-sans;
+    @apply text-md bg-white leading-[145%] font-sans;
+  }
+
+  input,
+  textarea {
+    @apply w-full border rounded-lg px-3 py-2 text-xs leading-[1.6];
+    @apply border-field-border bg-field-bg text-field-text;
+    @apply placeholder:text-field-placeholder;
+    @apply focus:outline-none focus:ring-4 focus:ring-focus-ring focus:border-focus-border;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  @layer base {
+    body {
+      @apply bg-[#141414] text-white;
+    }
   }
 }

@@ -86,15 +86,16 @@ function toggleMobileMenu(clickHandlerSelector, toggleSelector) {
     if (!menu) return;
 
     const isOpen = toggle.getAttribute("aria-expanded") === "true";
+    const newState = !isOpen;
     const type = toggle.dataset.toggle;
 
     toggleCurrentMenu(menu, toggle, isOpen);
 
-    if (type === "menu" && !isOpen === false) {
+    if (type === "menu" && !newState) {
       closeAllSubmenus(container);
     }
 
-    if (type === "submenu" && !isOpen) {
+    if (type === "submenu" && newState) {
       closeOtherSubmenus(container, menuId);
     }
   });

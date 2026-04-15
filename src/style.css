@@ -4,10 +4,9 @@
 @import "./assets/styles/base.css";
 @import "./assets/styles/utilities.css";
 @import "./assets/styles/vendors.css";
-@import "./assets/styles/components/button.css";
 @import "./assets/styles/components/header.css";
 @import "./assets/styles/components/breadcrumb.css";
-@import "./assets/styles/components/hero.css";
 @import "./assets/styles/components/product-card.css";
+@import "./assets/styles/components/hero.css";
 @import "./assets/styles/components/form.css";
 @import "./assets/styles/components/footer.css";

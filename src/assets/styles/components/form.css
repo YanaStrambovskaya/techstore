@@ -1,22 +1,13 @@
 @layer components {
-  /* ---------------------------------- */
-  /* Form */
-  /* ---------------------------------- */
-  .form__field {
-    width: 100%;
-    font-size: var(--text-xs);
-    border-radius: var(--radius-md);
-    border: 1px solid var(--color-gray-300);
-    @apply leading-[1.6] px-3 py-2;
-    @apply focus:outline-none 
-    focus:ring-4 
-    focus:ring-(--brand-100) 
-    focus:border-[#D6BBFB];
+  .form__group {
+    @apply flex flex-col gap-1;
   }
   .form__label-text {
-    @apply text-gray-500 font-medium text-(length:--text-sm);
+    @apply text-field-text 
+    font-medium 
+    text-sm;
   }
   .form__required {
-    @apply text-(--brand-600) font-medium;
+    @apply text-brand-600 font-medium;
   }
 }

@@ -1,19 +1,50 @@
 /* ---------------------------------- */
 /* Utilities */
 /* ---------------------------------- */
-@layer components {
-  .container {
-    max-width: 1200px;
-    width: 100%;
-    padding-inline: 15px;
-    margin-inline: auto;
-  }
-  .section-title {
-    color: black;
-    font-size: var(--heading-sm);
-    line-height: 145%;
-    font-weight: 600;
-    @apply mb-4;
-    @apply lg:text-(length:--heading-lg);
-  }
+@utility container {
+  max-width: 1200px;
+  width: 100%;
+  padding-inline: 15px;
+  margin-inline: auto;
+}
+@utility section-title {
+  line-height: 145%;
+  font-weight: 600;
+  @apply mb-4 text-heading-sm text-section-title;
+  @apply lg:text-heading-lg;
+}
+
+@utility btn {
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  @apply hover:bg-brand-700 
+        rounded-lg  
+        text-sm 
+        px-4
+        py-2
+        bg-brand-600 
+        focus:outline-none 
+        focus:ring-4 
+        focus:ring-focus-ring
+        focus:border-focus-border
+        disabled:bg-btn-disabled-bg
+        disabled:opacity-50
+        disabled:cursor-not-allowed;
+}
+
+@utility btn--icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 50%;
+}
+@utility icon {
+  width: 24px;
+  height: 24px;
 }

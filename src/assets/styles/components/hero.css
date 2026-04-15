@@ -5,7 +5,7 @@
   .hero__slide {
     display: grid !important;
     overflow: hidden;
-    border-radius: var(--card-radius);
+    @apply rounded-card;
   }
   .hero__media {
     @apply col-start-1 row-start-1 relative lg:aspect-[16/8];
@@ -39,9 +39,5 @@
     font-size: 20px;
     font-weight: 600;
     @apply md:text-[28px] lg:text-[60px];
-  }
-  .hero__cta {
-    width: fit-content;
-    @apply lg:text-lg lg:px-7 lg:py-3;
   }
 }

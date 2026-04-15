@@ -5,9 +5,7 @@
   .product-card {
     display: flex;
     flex-direction: column;
-    background-color: white;
-    border-radius: var(--card-radius);
-    @apply h-full shadow-xl;
+    @apply h-full shadow-xl rounded-card bg-card-bg;
   }
 
   .product-card--lg.product-card {
@@ -34,18 +32,20 @@
     @apply gap-4 lg:gap-6 lg:items-center;
   }
   .product-card__title {
-    font-size: var(--text-xs);
     font-weight: 700;
     text-align: center;
-    @apply lg:text-(length:--text-md);
+    @apply text-xs lg:text-md;
   }
   .product-card__badge {
     width: fit-content;
-    background-color: var(--brand-100);
-    color: var(--brand-600);
-    font-size: var(--text-sm);
     font-weight: 600;
-    @apply rounded-full px-3 py-2 uppercase;
+    @apply rounded-full 
+    px-3 
+    py-2 
+    uppercase 
+    bg-brand-100 
+    text-brand-600 
+    text-sm;
   }
   .product-card__specs {
     @apply flex gap-1 shrink-0 items-center;
@@ -54,15 +54,13 @@
     @apply justify-center;
   }
   .product-card__spec {
-    @apply text-(--gray-text) shrink-0;
+    @apply text-secondary-text shrink-0;
   }
   .product-card--sm .product-card__spec {
-    font-size: var(--text-xxs);
-    @apply lg:text-(length:--text-sm);
+    @apply text-xxs lg:text-sm;
   }
   .product-card--lg .product-card__spec {
-    font-size: var(--text-sm);
-    @apply lg:text-(length:--text-md);
+    @apply text-sm lg:text-md;
   }
   .product-card__pricing {
     @apply flex gap-1;
@@ -72,17 +70,14 @@
     justify-content: center;
   }
   .product-card--sm .product-card__price {
-    font-size: var(--text-sm);
     font-weight: 700;
-    @apply lg:text-(length:--text-md);
+    @apply text-sm lg:text-md;
   }
   .product-card__price--old {
-    color: var(--gray-text);
-    @apply line-through;
+    @apply text-secondary-text line-through;
   }
   .product-card--sm .product-card__price--old {
-    font-size: var(--text-xxs);
-    @apply lg:text-(length:--text-sm);
+    @apply text-xxs lg:text-(length:--text-sm);
   }
   .product-card__dot {
     width: 2px;

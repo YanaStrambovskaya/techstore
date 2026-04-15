@@ -5,11 +5,11 @@
   .footer__link {
     display: flex;
     align-items: center;
-    @apply gap-1 
+    @apply gap-2 
       lg:px-3 
       lg:py-2 
       lg:rounded-full 
-      hover:bg-(--menu-bg-gray-hover);
+      hover:bg-menu-bg-hover;
   }
   .footer__text {
     @apply hidden lg:block;
